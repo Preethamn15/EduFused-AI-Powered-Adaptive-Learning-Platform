@@ -78,9 +78,17 @@ EduFused integrates **Natural Language Processing (NLP)**, a **chatbot for real-
 ---
 
 
-## 💡 Highlight  
+## Highlight  
+This project was built **with diploma and branch-change students in mind**.  
+Many learners from diverse backgrounds struggle when they enter advanced subjects because they:  
+- Don’t know which resources to refer to 
+- Waste a lot of time searching for structured material 
+- Lack access to personalized guidance 
 
-The **NLP chatbot** is the **core innovation** of EduFused — designed as a **student-friendly AI tutor** that not only answers queries but also supports **adaptive learning** through quizzes and performance analysis.  
+To address this, **EduFused** brings together all essential tools — a chatbot for real-time doubt solving, adaptive quizzes, and curated learning content — into a single platform.  
 
+Our goal is simple: **help students save time, learn smarter, and build confidence in core subjects.**
 ---
-
+**Contact** 
+📧 preetham159@gmail.com
+📧 preethamn2004@gmail.com
