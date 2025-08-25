@@ -65,7 +65,7 @@ EduFused follows a modular **client-server architecture**:
 
 ## Workflow 
 <p align="center">
-  <img src="pics/workflow.png" alt="System Workflow" width="400"/>
+  <img src="pics/workflow.png" alt="System Workflow" width="200"/>
 </p>
 
 1. **Student registers/login** to platform.  
