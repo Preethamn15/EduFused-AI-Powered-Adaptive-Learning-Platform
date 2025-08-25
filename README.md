@@ -33,7 +33,7 @@ EduFused integrates **Natural Language Processing (NLP)**, a **chatbot for real-
 
 EduFused follows a modular **client-server architecture**:  
 <p align="center">
-  <img src="assets/Architecture" alt="System Architecture" width="700"/>
+  <img src="pics/Architecture" alt="System Architecture" width="700"/>
 </p>
 
 
@@ -42,7 +42,7 @@ EduFused follows a modular **client-server architecture**:
 
 ## Tech Stack  
 <p align="center">
-  <img src="assets/Tech" alt="Tech Stack" width="700"/>
+  <img src="pics/Tech" alt="Tech Stack" width="700"/>
 </p>
 
 
@@ -59,7 +59,7 @@ EduFused follows a modular **client-server architecture**:
 
 | Chatbot Interaction | Performance Graphs | Tutor Dashboard |  
 |---------------------|--------------------|----------------|  
-| ![Chatbot](assets/chatbot.png) | ![Quiz Results](assets/quiz_graph.png) | ![Tutor Panel](assets/tutor_dashboard.png) |  
+| ![Chatbot](pics/chatbot.png) | ![Quiz Results](pics/quiz_graph.png) | ![Tutor Panel](pics/tutor_dashboard.png) |  
 
 ---
 
