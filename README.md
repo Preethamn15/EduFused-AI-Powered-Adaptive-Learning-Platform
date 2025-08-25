@@ -42,7 +42,7 @@ EduFused follows a modular **client-server architecture**:
 
 ## Tech Stack  
 <p align="center">
-  <img src="pics/Tech" alt="Tech Stack" width="700"/>
+  <img src="pics/Tech.png" alt="Tech Stack" width="700"/>
 </p>
 
 
