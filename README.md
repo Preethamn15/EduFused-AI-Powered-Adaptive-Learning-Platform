@@ -59,7 +59,7 @@ EduFused follows a modular **client-server architecture**:
 
 | Chatbot Interaction | Performance Graphs | Tutor Dashboard |  
 |---------------------|--------------------|----------------|  
-| ![Chatbot](pics/chatbot.png) | ![Quiz Results](pics/quiz_graph.png) | ![Tutor Panel](pics/tutor_dashboard.png) |  
+| ![Chatbot](pics/ChatBot.png) | ![Quiz Results](pics/quiz_graph.png) | ![Tutor Panel](pics/tutor_dashboard.png) |  
 
 ---
 
