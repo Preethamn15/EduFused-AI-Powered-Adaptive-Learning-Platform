@@ -1,0 +1,55 @@
+<?php
+session_start();
+include '../components/connect.php';
+
+if (!isset($_SESSION['reg_data'])) {
+    header('Location: register.php');
+    exit();
+}
+
+if (isset($_POST['verify'])) {
+    $user_otp = $_POST['otp'];
+    if ($user_otp == $_SESSION['reg_data']['otp']) {
+        // OTP matches - insert user into DB
+        $id = uniqid();
+        $data = $_SESSION['reg_data'];
+
+        $insert_tutor = $conn->prepare("INSERT INTO `tutors` (id, name, profession, email, password, image) VALUES (?, ?, ?, ?, ?, ?)");
+        $insert_tutor->execute([
+            $id,
+            $data['name'],
+            $data['profession'],
+            $data['email'],
+            $data['password'],
+            $data['image']
+        ]);
+
+        // Move uploaded image
+        move_uploaded_file($data['image_tmp_name'], $data['image_folder']);
+
+        // Clear session
+        unset($_SESSION['reg_data']);
+        
+        echo "<p>Registration successful! <a href='login.php'>Login here</a></p>";
+        exit();
+    } else {
+        $error = "Invalid OTP, please try again.";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head><title>Verify OTP</title></head>
+<body>
+
+<h3>Enter OTP sent to your email</h3>
+<?php if(isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
+
+<form method="post">
+    <input type="text" name="otp" placeholder="Enter OTP" required maxlength="6" minlength="6" />
+    <button type="submit" name="verify">Verify</button>
+</form>
+
+</body>
+</html>

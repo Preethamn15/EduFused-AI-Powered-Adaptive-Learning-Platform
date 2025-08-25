@@ -1,0 +1,30 @@
+<!--
+    This is the main page of the web app. It contains a form that takes in the user's text input and the language to summarize in.
+    The form is submitted to the /summarize route.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Summarizer</h1>
+        <form action="/summarize" method="post">
+            <label for="language">Select language to summarize in:
+            <input type="radio" name="language" value="English" checked> English
+            <input type="radio" name="language" value="Kannada"> Kannada
+            <input type="radio" name="language" value="Hindi"> Hindi
+            <input type="radio" name="language" value="Tamil"> Tamil
+            <input type="radio" name="language" value="Telugu"> Telugu</label>
+            <label for="user_input">Enter your text:</label>
+            <textarea id="user_input" name="user_input" required></textarea>
+            <button type="submit">Summarize</button>
+        </form>
+    </div>
+</body>
+</html>

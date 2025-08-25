@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DSA Topic-wise Quiz Dashboard</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>DSA Quiz to Identify Topic Weakness</h1>
+    <form id="quizForm">
+      <label for="studentName">Enter your name:</label><br />
+      <input type="text" id="studentName" name="studentName" required /><br /><br />
+
+      <div id="questionsContainer"></div>
+
+      <input type="submit" value="Submit Quiz" />
+    </form>
+
+    <div id="resultSection" style="display:none;">
+      <h2>Results</h2>
+      <p id="scoreText"></p>
+      <div id="wrongAnswers"></div>
+      <canvas id="performanceChart" width="600" height="300"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+ <div style="text-align: center; margin-top: 20px;">
+   <form action="home.php" method="get">
+      <button type="submit" class="inline-btn">⬅️ Back to Home</button>
+   </form>
+</div>
+
+</body>
+</html>

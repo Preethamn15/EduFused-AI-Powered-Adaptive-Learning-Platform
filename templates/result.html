@@ -1,0 +1,54 @@
+<!--
+    This file contains the HTML code for the result page.
+    It is rendered by the result() function in the app.py file.
+    The result() function passes the following variables to this file:
+        - user_input: The text entered by the user in the form.
+        - summary: The summary of the text entered by the user.
+        - selected_language_name: The name of the language selected by the user.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarization Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h2>Summarization Result</h2>
+        <div class="result-text">
+            <h3>Original Text:</h3>
+            <p>{{ user_input }}</p>
+            <h3>Summary in {{ selected_language_name }}:</h3>
+            <p id="summary">{{ summary }}</p>
+            
+            {% if selected_language_name.lower() in ['english', 'hindi'] %}
+                <button onclick="speakSummary()">Speak Summary</button>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        function speakSummary() {
+            var summaryElement = document.getElementById('summary');
+            var summaryText = summaryElement.innerText;
+
+            var speechSynthesis = window.speechSynthesis;
+            var speechUtterance = new SpeechSynthesisUtterance(summaryText);
+
+
+            var selectedLanguage = '{{ selected_language_name|lower }}';
+            if (selectedLanguage === 'english') {
+                speechUtterance.lang = 'en-IN';
+            } else if (selectedLanguage === 'hindi') {
+                speechUtterance.lang = 'hi-IN';
+            }
+            speechUtterance.rate = 0.8; 
+
+            speechSynthesis.speak(speechUtterance);
+        }
+    </script>
+</body>
+</html>
