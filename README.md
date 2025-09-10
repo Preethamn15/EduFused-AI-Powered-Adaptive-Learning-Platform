@@ -1,4 +1,4 @@
-# EduFused – AI-Powered Learning for Every Student  
+# EduFused – AI-Powered Learning Platform 
 
 An **AI-powered adaptive learning platform** designed to help students overcome challenges in technical subjects like **Programming, Data Structures, and Mathematics**.  
 EduFused integrates **Natural Language Processing (NLP)**, a **chatbot for real-time doubt solving**, and **quiz-based personalized learning paths** to create an engaging and student-friendly learning ecosystem.  
